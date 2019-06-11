@@ -1,0 +1,44 @@
+
+&iomuxc_snvs {
+    pinctrl-names = "default_snvs";
+    myimx6ek140-6y-snvs {
+        pinctrl_snvs_ts: snvs_ts_grp {
+            fsl,pins = <
+                MX6ULL_PAD_SNVS_TAMPER0__GPIO5_IO00  0xb0 		/* TOUCH_nEINT1 */
+            >;
+        };
+        pinctrl_snvs_gpio_leds: gpio_leds_grp {
+            fsl,pins = <
+                MX6ULL_PAD_SNVS_TAMPER1__GPIO5_IO01	0x80000000	/* LED3, D2 */
+                MX6ULL_PAD_SNVS_TAMPER4__GPIO5_IO04	0x80000000	/* LED4, D1 */
+                MX6ULL_PAD_SNVS_TAMPER5__GPIO5_IO05	0x80000000	/* LED1, D5 */
+                MX6ULL_PAD_SNVS_TAMPER8__GPIO5_IO08	0x80000000	/* LED2, D4 */
+            >;
+        };
+        pinctrl_snvs_4g_rst: snvs_4g_rst_grp {
+            fsl,pins = <
+                MX6ULL_PAD_SNVS_TAMPER2__GPIO5_IO02  0x80000000 /* P8:32 */
+            >;
+        };
+        pinctrl_snvs_uart5_dr: snvs_uart5_dr_grp {
+            fsl,pins = <
+                MX6ULL_PAD_SNVS_TAMPER3__GPIO5_IO03  0x80000000 /* P8:34 */
+            >;
+        };
+        pinctrl_snvs_gpio: snvs_gpio_grp {
+            fsl,pins = <
+                MX6ULL_PAD_SNVS_TAMPER6__GPIO5_IO06  0x80000000	/* GPIO LED2 ? TOUCH_nEINT2 */
+            >;
+        };
+        pinctrl_snvs_sci2_io: snvs_sci2_io_grp {
+            fsl,pins = <
+                MX6ULL_PAD_SNVS_TAMPER7__GPIO5_IO07  0x80000000 /* P8, 31 */
+            >;
+        };
+        pinctrl_snvs_enet_rst: snvs_enet_rst_grp {
+            fsl,pins = <
+                MX6ULL_PAD_SNVS_TAMPER9__GPIO5_IO09  0x80000000 /* ENET RST */
+            >;
+        };
+    };
+};
