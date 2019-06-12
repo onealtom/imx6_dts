@@ -7,24 +7,24 @@
 /dts-v1/;
 
 #include "myimx6y-pinfunc.h"
-#include "myimx6y.tmp.dtsi"
+#include "myimx6y.dtsi"
 
-#include "myimx6ek140-iomuxc.tmp.dtsi"
-#include "myimx6ek140-6y-snvs.tmp.dtsi"
-#include "myimx6cb140-nand4nand.tmp.dtsi"   /* myimx6cb140-nand4emmc.dtsi */
-#include "myimx6a7-lcd4wvga.tmp.dtsi"       /* myimx6a7-lcd4wqvga.dtsi */
-#include "myimx6a7-enet4uart.tmp.dtsi"      /* myimx6a7-enet4enet.dtsi */
-#include "myimx6ek140.tmp.dtsi"
+#include "myimx6ek140-iomuxc.dtsi"
+#include "myimx6ek140-6y-snvs.dtsi"
+#include "myimx6cb140-nand4nand.dtsi"   /* myimx6cb140-nand4emmc.dtsi */
+#include "myimx6a7-lcd4wvga.dtsi"       /* myimx6a7-lcd4wqvga.dtsi */
+#include "myimx6a7-enet4uart.dtsi"      /* myimx6a7-enet4enet.dtsi */
+#include "myimx6ek140.dtsi"
 
 / {
 	model = "MYIMX6EK140-6Y-256M-Nand Evaluation Kit";
 	compatible = "myzr,myimx6cb140", "myzr,myimx6ek140", "fsl,imx6ull";
 };
 
-//&iomuxc {
-//    pinctrl-0 = <&pinctrl_nand_gpio &pinctrl_gpio_gpio>;
-//};
-//
-//&iomuxc_snvs {
-//    pinctrl-0 = <&pinctrl_snvs_4g_rst &pinctrl_snvs_gpio>;
-//};
+&iomuxc {
+    pinctrl-0 = <&pinctrl_nand_gpio &pinctrl_gpio_gpio>;
+};
+
+&iomuxc_snvs {
+    pinctrl-0 = <&pinctrl_snvs_4g_rst &pinctrl_snvs_gpio>;
+};
