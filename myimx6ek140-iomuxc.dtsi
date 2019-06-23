@@ -59,6 +59,14 @@
             fsl,pins = <
                 MX6UL_PAD_GPIO1_IO03__GPIO1_IO03		0x80000000	/* P8:8 */
                 MX6UL_PAD_GPIO1_IO04__GPIO1_IO04		0x80000000	/* P8:5 */
+                /*JTAG*/
+                MX6UL_PAD_GPIO1_IO00__GPIO1_IO00           0x000010B0
+                MX6UL_PAD_JTAG_MOD__GPIO1_IO10             0x0000B0A0
+                MX6UL_PAD_JTAG_TCK__GPIO1_IO14             0x000070A0
+                MX6UL_PAD_JTAG_TDI__GPIO1_IO13             0x000070A0
+                MX6UL_PAD_JTAG_TDO__GPIO1_IO12             0x000090B1
+                MX6UL_PAD_JTAG_TMS__GPIO1_IO11             0x000070A0
+                MX6UL_PAD_JTAG_TRST_B__GPIO1_IO15          0x000070A0
             >;
         };
         pinctrl_gpio1_usb_otg1_id: gpio1_usb_otg1_id_grp {
@@ -140,17 +148,7 @@
                 MX6UL_PAD_UART5_TX_DATA__UART5_DCE_TX	0x1b0b1
                 MX6UL_PAD_UART5_RX_DATA__UART5_DCE_RX	0x1b0b1
             >;
-        };
-
-        pinctrl_jtag_sai2: jtag_sai2_grp {
-            fsl,pins = <
-                MX6UL_PAD_JTAG_TCK__SAI2_RX_DATA		0x11088
-                MX6UL_PAD_JTAG_TMS__SAI2_MCLK			0x17088
-                MX6UL_PAD_JTAG_TDI__SAI2_TX_BCLK		0x17088
-                MX6UL_PAD_JTAG_TDO__SAI2_TX_SYNC		0x17088
-                MX6UL_PAD_JTAG_TRST_B__SAI2_TX_DATA		0x11088
-                MX6UL_PAD_JTAG_MOD__GPIO1_IO10			0x17059		/* P8:17 */
-            >;
+        
         };
     };
 };

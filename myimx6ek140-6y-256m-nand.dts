@@ -23,7 +23,7 @@
 };
 
 &iomuxc {
-    pinctrl-0 = <&pinctrl_nand_gpio &pinctrl_gpio_gpio>;
+    pinctrl-0 = <&pinctrl_nand_gpio &pinctrl_gpio_gpio >;
 };
 
 &iomuxc_snvs {

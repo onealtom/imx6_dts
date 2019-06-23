@@ -5,6 +5,7 @@
         pinctrl_snvs_ts: snvs_ts_grp {
             fsl,pins = <
                 MX6ULL_PAD_SNVS_TAMPER0__GPIO5_IO00  0xb0 		/* TOUCH_nEINT1 */
+                /*ft5316*/
             >;
         };
         pinctrl_snvs_gpio_leds: gpio_leds_grp {
@@ -18,6 +19,7 @@
         pinctrl_snvs_4g_rst: snvs_4g_rst_grp {
             fsl,pins = <
                 MX6ULL_PAD_SNVS_TAMPER2__GPIO5_IO02  0x80000000 /* P8:32 */
+                /*top layer iomuxc_snvs*/
             >;
         };
         pinctrl_snvs_uart5_dr: snvs_uart5_dr_grp {
@@ -28,6 +30,7 @@
         pinctrl_snvs_gpio: snvs_gpio_grp {
             fsl,pins = <
                 MX6ULL_PAD_SNVS_TAMPER6__GPIO5_IO06  0x80000000	/* GPIO LED2 ? TOUCH_nEINT2 */
+                /*top layer iomuxc_snvs*/
             >;
         };
         pinctrl_snvs_sci2_io: snvs_sci2_io_grp {
