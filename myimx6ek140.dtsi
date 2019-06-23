@@ -94,7 +94,7 @@
         spi-max-frequency = <60000000>;
     };
 };
-
+/*
 &flexcan1 {
     pinctrl-names = "default";
     pinctrl-0 = <&pinctrl_uart3_flexcan1>;
@@ -106,7 +106,7 @@
     pinctrl-0 = <&pinctrl_uart2_flexcan2>;
     status = "okay";
 };
-
+*/
 &gpc {
     fsl,cpu_pupscr_sw2iso = <0xf>;
     fsl,cpu_pupscr_sw = <0x0>;
