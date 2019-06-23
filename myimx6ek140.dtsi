@@ -218,18 +218,6 @@
     status = "okay";
 };
 
-&uart4 {
-    pinctrl-names = "default";
-    pinctrl-0 = <&pinctrl_uart4_uart4>;
-    status = "okay";
-};
-
-&uart5 {
-    pinctrl-names = "default";
-    pinctrl-0 = <&pinctrl_uart5_uart5 &pinctrl_snvs_uart5_dr>;
-    status = "okay";
-};
-
 &usbotg1 {
     pinctrl-names = "default";
     pinctrl-0 = <&pinctrl_gpio1_usb_otg1_id>;
