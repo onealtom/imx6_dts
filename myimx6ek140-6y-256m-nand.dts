@@ -18,6 +18,7 @@
 
 / {
 	model = "MYIMX6EK140-6Y-256M-Nand Evaluation Kit";
+    /include/ "dt_ver.dtsi"
 	compatible = "myzr,myimx6cb140", "myzr,myimx6ek140", "fsl,imx6ull";
 };
 

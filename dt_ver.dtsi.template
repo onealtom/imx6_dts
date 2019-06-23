@@ -1,0 +1,3 @@
+	builder = "$BUILDER";
+	build_time = "$SH_TIME";
+	commit = "$HASH_VERSION";
