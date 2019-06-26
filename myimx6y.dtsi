@@ -33,10 +33,6 @@
 		serial0 = &uart1;
 		serial1 = &uart2;
 		serial2 = &uart3;
-		serial3 = &uart4;
-		serial4 = &uart5;
-		serial5 = &uart6;
-		serial6 = &uart7;
 		serial7 = &uart8;
 		spi0 = &ecspi1;
 		spi1 = &ecspi2;

@@ -42,25 +42,26 @@
                 MX6UL_PAD_CSI_DATA01__GPIO4_IO22		0x0b0b0		/* P8:29 */
             >;
         };
-        pinctrl_csi_ecspi1: csi_ecspi1_grp {
+/*        pinctrl_csi_ecspi1: csi_ecspi1_grp {
             fsl,pins = <
-                MX6UL_PAD_CSI_DATA04__ECSPI1_SCLK 		0x0b0b0		/* P8:28 */
-                MX6UL_PAD_CSI_DATA06__ECSPI1_MOSI 		0x0b0b0		/* P8:24 */
-                MX6UL_PAD_CSI_DATA07__ECSPI1_MISO 		0x0b0b0		/* P8:26 */
+                MX6UL_PAD_CSI_DATA04__ECSPI1_SCLK 		0x0b0b0		 P8:28 
+                MX6UL_PAD_CSI_DATA06__ECSPI1_MOSI 		0x0b0b0		 P8:24 
+                MX6UL_PAD_CSI_DATA07__ECSPI1_MISO 		0x0b0b0		 P8:26 
             >;
         };
-        pinctrl_csi_ecspi1_cs0: csi_ecspi1_cs0_grp {
+          pinctrl_csi_ecspi1_cs0: csi_ecspi1_cs0_grp {
             fsl,pins = <
-                MX6UL_PAD_CSI_DATA05__GPIO4_IO26		0x0b0b0		/* P8:30 */
+                MX6UL_PAD_CSI_DATA05__GPIO4_IO26		0x0b0b0		 P8:30 
             >;
         };
-
+*/
         pinctrl_gpio_gpio: gpio_gpio_grp {
             fsl,pins = <
-                MX6UL_PAD_GPIO1_IO03__GPIO1_IO03		0x80000000	/* P8:8 */
-                MX6UL_PAD_GPIO1_IO04__GPIO1_IO04		0x80000000	/* P8:5 */
-                /*JTAG*/
+                /* MX6UL_PAD_GPIO1_IO03__GPIO1_IO03		0x80000000 */	/* P8:8 */
+                /* MX6UL_PAD_GPIO1_IO04__GPIO1_IO04		0x80000000 */	/* P8:5 */
+                /*USB_OTG1_ID*/
                 MX6UL_PAD_GPIO1_IO00__GPIO1_IO00           0x000010B0
+                /*JTAG*/
                 MX6UL_PAD_JTAG_MOD__GPIO1_IO10             0x0000B0A0
                 MX6UL_PAD_JTAG_TCK__GPIO1_IO14             0x000070A0
                 MX6UL_PAD_JTAG_TDI__GPIO1_IO13             0x000070A0
@@ -81,6 +82,14 @@
                 MX6UL_PAD_UART4_TX_DATA__GPIO1_IO28        0x000010B0
                 MX6UL_PAD_UART5_RX_DATA__GPIO1_IO31        0x000010B0
                 MX6UL_PAD_UART5_TX_DATA__GPIO1_IO30        0x000010B0
+                /*SPI1 P8 24 26 28 30*/
+                MX6UL_PAD_CSI_DATA04__GPIO4_IO25           0x000010B0
+                MX6UL_PAD_CSI_DATA05__GPIO4_IO26           0x000010B0
+                MX6UL_PAD_CSI_DATA06__GPIO4_IO27           0x000010B0
+                MX6UL_PAD_CSI_DATA07__GPIO4_IO28           0x000010B0
+                /*I2C1 P8 35 36*/
+                MX6UL_PAD_CSI_HSYNC__GPIO4_IO20            0x000010B0
+                MX6UL_PAD_CSI_VSYNC__GPIO4_IO19            0x000010B0
             >;
         };
         pinctrl_gpio1_usb_otg1_id: gpio1_usb_otg1_id_grp {
@@ -90,8 +99,12 @@
         };
         pinctrl_gpio1_adc1: gpio1_adc1_grp {
             fsl,pins = <
-                MX6UL_PAD_GPIO1_IO01__GPIO1_IO01		0xb0	/* P8:6 */
-                MX6UL_PAD_GPIO1_IO02__GPIO1_IO02		0xb0	/* P8:7 */
+                /*MX6UL_PAD_GPIO1_IO01__GPIO1_IO01		0xb0*/	/* P8:6 */
+                /*MX6UL_PAD_GPIO1_IO02__GPIO1_IO02		0xb0*/	/* P8:7 */
+                MX6UL_PAD_GPIO1_IO01__GPIO1_IO01           0x000010B0
+                MX6UL_PAD_GPIO1_IO02__GPIO1_IO02           0x000010B0
+                MX6UL_PAD_GPIO1_IO03__GPIO1_IO03           0x000010B0
+                MX6UL_PAD_GPIO1_IO04__GPIO1_IO04           0x000010B0
             >;
         };
         pinctrl_gpio1_pwm4: gpio1_pwm4_grp {
