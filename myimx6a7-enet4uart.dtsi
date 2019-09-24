@@ -35,6 +35,7 @@
 				MX6UL_PAD_ENET2_TX_EN__UART8_DCE_RX		0x1b0b1
 				MX6UL_PAD_ENET2_TX_CLK__UART8_DCE_CTS	0x1b0b1
 				MX6UL_PAD_ENET2_RX_ER__UART8_DCE_RTS	0x1b0b1
+				
 			>;
 		};
 		pinctrl_uart1_gpio: uart1_gpio_grp {
@@ -77,5 +78,7 @@
 &uart8 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_enet2_uart8>;
+	linux,rs485-enabled-at-boot-time;
+	fsl,uart-has-rtscts;
 	status = "okay";
 };

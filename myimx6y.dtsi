@@ -513,6 +513,11 @@
 				#gpio-cells = <2>;
 				interrupt-controller;
 				#interrupt-cells = <2>;
+/*			gpio-line-names = "AP_GPIO0", "", "", "", "", "", "", "",
+				     "AP_GPIO8", "", "", "", "", "", "", "",
+				     "AP_GPIO16", "", "", "", "", "", "", "",
+				     "AP_GPIO24", "", "", "", "", "AP_GPIO29", "AP_GPIO30",
+				     "AP_GPIO31";*/
 			};
 
 			gpio2: gpio@020a0000 {
